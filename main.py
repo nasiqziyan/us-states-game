@@ -11,7 +11,7 @@ turtle.shape(image)
 data = pandas.read_csv('50_states.csv')
 all_states = data.state.to_list()
 
-# Check if answer_state is a state in the list of all_states
+# Check if answer_state is a state in the list of all_states.
 
 guessed_states = []
 
