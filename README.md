@@ -1,1 +1,3 @@
-# us-states-game
+# US States Quiz
+
+![](blank_states_img.gif)
