@@ -1,3 +1,3 @@
 # US States Quiz
 
-![](blank_states_img.gif)
+![](us-states-game.gif)
