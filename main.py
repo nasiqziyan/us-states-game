@@ -20,7 +20,7 @@ all_states = data.state.to_list()
 # Check if answer_state is a state in the list of all_states.
 
 guessed_states = []
-missed_states = []
+# missed_states = []
 
 while len(guessed_states) < 50:
 
@@ -29,9 +29,7 @@ while len(guessed_states) < 50:
         prompt="Type the name of a US State. Type 'Exit' to exit and reveal missed states.").title()
 
     if answer_state == 'Exit':
-        for state in all_states:
-            if state not in guessed_states:
-                missed_states.append(state)
+        missed_states = [state for state in all_states if state not in guessed_states]
 
         missed_states_df = pandas.DataFrame(missed_states)
         missed_states_df.to_csv('states_to_learn.csv')
